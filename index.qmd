@@ -121,6 +121,9 @@ lgcp_morelia_2024$map
 ### [**Uruapan**]{style="color:#990000"}
 
 ```{r}
+load("~/Dropbox/r_developments/r_dashboards/netlify/transmission_chains/transmission_chains_2024/lgcp_uruapan_2024.RData")
+
+lgcp_uruapan_2024$map
 
 ```
 
