@@ -1,0 +1,71 @@
+---
+title: "Programa de Prevención & Control del Dengue | 2024"
+format: 
+  dashboard:
+      nav-buttons: [twitter, github, facebook]
+theme: custom.scss
+---
+
+```{r setup}
+library(sf)
+mapview::mapviewOptions(default = TRUE,
+                        basemaps.color.shuffle = FALSE)
+load("/Users/felipedzul/Library/CloudStorage/OneDrive-Personal/proyects/geocoding_mex/2024/8.RData/denmex_2024.RData")
+library(magrittr)
+```
+
+
+
+# [**Cadenas de Transmisión**]{style="font-size:8pt"}
+
+::: panel-tabset
+
+### [**Morelia**]{style="color:#990000"}
+
+```{r}
+denhotspots::transmission_chains_map(geocoded_dataset = z,
+                                     cve_edo = "16",
+                                     locality = "Morelia",
+                                     dengue_cases = "Confirmado")
+```
+
+
+### [**Uruapan**]{style="color:#990000"}
+
+```{r}
+denhotspots::transmission_chains_map(geocoded_dataset = z,
+                                     cve_edo = "16",
+                                     locality = "Uruapan",
+                                     dengue_cases = "Confirmado")
+```
+
+
+### [**Lazaro Cardenas**]{style="color:#990000"}
+
+```{r}
+denhotspots::transmission_chains_map(geocoded_dataset = z,
+                                     cve_edo = "16",
+                                     locality = "Ciudad Lazaro Cardenas",
+                                     dengue_cases = "Confirmado")
+```
+
+
+
+:::
+
+
+
+# [**Mapas de Calor**]{style="font-size:8pt"}
+
+::: panel-tabset
+
+
+:::
+
+
+# [**Log-Gaussian Cox Processes**]{style="font-size:8pt"}
+
+::: panel-tabset
+
+
+:::
